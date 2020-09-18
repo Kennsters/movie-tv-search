@@ -1,4 +1,4 @@
-module.exports = require('mongoose').connect('mongodb://localhost/moviestv_db', { 
+module.exports = require('mongoose').connect(process.env.MONGODB_URI || 'mongodb://localhost/moviestv_db', { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
 })
